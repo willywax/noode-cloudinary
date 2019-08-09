@@ -18,6 +18,7 @@ class Cars {
     }
     static saveCar(car){
         cars.push(car);
+        
     }
 
     static getCars(){
