@@ -58,13 +58,10 @@ class CarController {
                 if (err) {
                     res.status(404).json(err);
                 }
-
                 res.status(200).json(result);
-
 
             }
         )
-
     }
 }
 
