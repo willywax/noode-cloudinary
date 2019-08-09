@@ -4,12 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --presets-env -d lib/src",
+    "start": "nodemon --exec babel-node src/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cloudinary": "^1.14.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "babel-cli": "^6.26.0"
   }
 }
