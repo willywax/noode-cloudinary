@@ -7,5 +7,7 @@ const router = express.Router();
 router.post('/', multer, carController.saveOne);
 router.get('/:id',carController.getCarImage);
 router.get('/',carController.getCarImages);
+router.delete('/:id',carController.deleteCarImage);
+
 
 export default router;
