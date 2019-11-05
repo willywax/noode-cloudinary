@@ -8,6 +8,6 @@ router.post('/', multer, carController.saveOne);
 router.get('/:id',carController.getCarImage);
 router.get('/',carController.getCarImages);
 router.delete('/:id',carController.deleteMultipleImages);
-router.delete('/', carController.deleteMultipleImages);
+
 
 export default router;
