@@ -5,6 +5,9 @@ import multer from '../middleware/multer-config';
 const router = express.Router();
 
 router.post('/', multer, carController.saveOne);
-router.get('/',carController.getCars);
+router.get('/:id',carController.getCarImage);
+router.get('/',carController.getCarImages);
+router.delete('/:id',carController.deleteMultipleImages);
+
 
 export default router;
